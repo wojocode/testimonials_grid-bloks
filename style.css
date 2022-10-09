@@ -15,5 +15,81 @@ font-size:13px;
 body{
     font-family: 'Barlow Semi Condensed', sans-serif;
     min-height:100vh;   
+    background-color:var(--light_grayish_blue);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width:86%;
+    margin:5.5rem 0;
+}
+.container{
+    width:100%;
+    display: grid;
+    gap:2rem;
+}
+.container > div:nth-child(odd){
+    color:var(--very_dark_grayish_blue);
+}
+.tml > *{
+    padding:0.9rem 0;
+}
+.tml div:first-child{
+    padding-top:1.6rem;
+}
+.tml blockquote{
+    padding-bottom:2.6rem;
+}
+.tml{
+    border-radius:0.5rem;
+    padding:0 2.5rem;
+}
+.tml header{
+    font-size:0.75rem;
+    font-weight: 200;
+}
+.container > div:nth-child(even) header, .container > div:first-child header{
+    color:var(--light_grayish_blue);
+}
+.Daniel{
+    background-color:var(--moderate_violet);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 1.5rem;
+}
+.Johnathan{
+    background-color: var(--very_dark_grayish_blue);
+}
+.Jeanette{
     background-color: var(--white);
+}
+.Patrick{
+    background-color: var(--very_dark_blackish_blue);
+}
+.Kira{
+    background-color: var(--white);
+}
+img{
+    width:2.4rem;
+    border-radius:50%;
+}
+.id{
+    display:flex;
+    align-items: center;
+    gap:1.2rem;
+    color:var(--light_grayish_blue);
+    font-size:0.85rem;
+    font-weight: 100;
+}
+.Jeanette .id, .Jeanette blockquote , .Kira .id , .Kira blockquote{
+    color:var(--very_dark_grayish_blue);
+}
+.id h4{
+    opacity:50%;
+}
+blockquote{
+    color:var(--light_grayish_blue);
+    opacity: 70%;
+    line-height: 1.45rem;
 }
